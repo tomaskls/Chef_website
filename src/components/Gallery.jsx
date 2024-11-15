@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
@@ -17,6 +18,7 @@ const images = [
 ];
 
 export const MyGallery = () => 
-<div id="gallery">
-<ImageGallery items={images} />;
+<div style={{marginBottom: '30px'}} id="gallery">
+<Typography sx={{marginBottom:1, fontSize: { xs: '2rem', sm: '3rem'}}} variant="h3">My Gallery</Typography>
+<ImageGallery items={images} />
 </div>

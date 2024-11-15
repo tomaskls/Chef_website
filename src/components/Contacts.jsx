@@ -1,25 +1,5 @@
-import { 
-  Card,
-  CardContent,
-  Typography,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  IconButton,
-  Box,
-  Container,
-  styled,
-  useMediaQuery,
-  useTheme
-} from '@mui/material';
-import {
-  Phone as PhoneIcon,
-  Email as EmailIcon,
-  WhatsApp as WhatsAppIcon,
-  Facebook as FacebookIcon,
-  Instagram as InstagramIcon
-} from '@mui/icons-material';
+import { Card, CardContent, Typography, List, ListItem, ListItemIcon, ListItemText, IconButton, Box, Container, styled, useMediaQuery, useTheme} from '@mui/material';
+import { Phone as PhoneIcon, Email as EmailIcon, WhatsApp as WhatsAppIcon, Facebook as FacebookIcon, Instagram as InstagramIcon} from '@mui/icons-material';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   borderRadius: theme.shape.borderRadius,
@@ -51,7 +31,7 @@ const SocialIconButton = styled(IconButton)(({ theme }) => ({
   },
 }));
 
-const ContactCard = () => {
+export const ContactCard = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   
@@ -65,7 +45,7 @@ const ContactCard = () => {
   };
 
   return (
-    <Container maxWidth="sm" sx={{ 
+    <Container id="contact"  maxWidth="sm" sx={{ 
       mt: isMobile ? 2 : 4, 
       mb: isMobile ? 2 : 4,
       p: isMobile ? 1 : 2 
@@ -184,4 +164,3 @@ const ContactCard = () => {
   );
 };
 
-export default ContactCard;

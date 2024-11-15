@@ -1,16 +1,5 @@
 import PropTypes from 'prop-types';
-import { 
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Button,
-  Container,
-  Box,
-  Grid,
-  useMediaQuery,
-  useTheme
-} from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button, Container, Box, Grid2, useMediaQuery, useTheme} from '@mui/material';
 
 const StyledCard = ({ children, ...props }) => {
   const theme = useTheme();
@@ -101,7 +90,7 @@ StyledButton.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-const ServiceCards = () => {
+export const ServiceCards = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   
@@ -124,14 +113,14 @@ const ServiceCards = () => {
   ];
 
   return (
-    <Container maxWidth="lg" sx={{ 
+    <Container id="services" maxWidth="lg" sx={{  scrollMarginTop: "70px",
       mt: isMobile ? 2 : 4, 
       mb: isMobile ? 2 : 4,
       p: isMobile ? 1 : 2 
     }}>
-      <Grid container spacing={4}>
+      <Grid2 container spacing={4}>
         {services.map((service, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
+          <Grid2 size={{ xs:12, sm:12, md:4}} key={index}>
             <StyledCard>
               <CardMedia
                 component="img"
@@ -171,11 +160,10 @@ const ServiceCards = () => {
                 </Box>
               </CardContent>
             </StyledCard>
-          </Grid>
+          </Grid2>
         ))}
-      </Grid>
+      </Grid2>
     </Container>
   );
 };
 
-export default ServiceCards;
