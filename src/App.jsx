@@ -6,31 +6,33 @@ import MultiActionAreaCard from './components/Servises';
 import HeroCard from './components/Hero';
 import { Video } from './components/video/Video';
 import { MyGallery } from './components/Gallery';
+import ContactCard from './components/Contacts';
 
-// const darkTheme = createTheme({
-//   palette: {
-//     mode: 'dark',
-//   },
-// });
-
-const lightTheme = createTheme({
+const darkTheme = createTheme({
   palette: {
-    mode: 'light', // nebūtina, nes 'light' yra numatytoji reikšmė
+    mode: 'dark',
   },
 });
+
+// const lightTheme = createTheme({
+//   palette: {
+//     mode: 'light', // nebūtina, nes 'light' yra numatytoji reikšmė
+//   },
+// });
 
 function App() {
 
   return (
     <>
 
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={darkTheme}>
       <CssBaseline />
         <DrawerAppBar />
         <HeroCard />
         <MultiActionAreaCard />
         <Video />
         <MyGallery />
+        <ContactCard />
       </ThemeProvider>
     </>
   )
