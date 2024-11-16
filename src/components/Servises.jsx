@@ -64,11 +64,7 @@ export const ServiceCards = () => {
                   borderColor: 'divider',
                   pt: 3,
                 }}>
-                  <StyledButton 
-                    size="large"
-                  >
-                    Get in Touch
-                  </StyledButton>
+                  <StyledButton size="large" component="a" href="#contact">Get in Touch</StyledButton>
                 </Box>
               </CardContent>
             </StyledCard>
