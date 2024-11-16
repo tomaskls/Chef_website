@@ -1,8 +1,22 @@
-# React + Vite
+# Chef Fabio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a website for a private chef.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project uses the following technologies:
+- React
+- Vite template
+- Material-UI
+
+## Project Goals
+
+The goal of this project is to create an engaging and user-friendly website that showcases the culinary expertise of Chef Fabio. The site aims to: 
+- Highlight Chef Fabio's services and specialties. 
+- Provide an easy way for potential clients to get in touch and book services. 
+- Share Chef Fabio's culinary journey and achievements. 
+- Utilize the Material-UI library to ensure rapid development and maintain a professional, consistent
+
+## Author
+
+Tomas: [Github](https://github.com/tomaskls/)
